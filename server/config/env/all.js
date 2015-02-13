@@ -16,12 +16,6 @@ module.exports = {
       }
     }
   },
-  solr: {
-    host: 'titlesSolr',
-    port: 80,
-    path: '/'
-  },
-  flowUrl: 'flow.tbs.io',
   logging: {
     name: 'contracts',
     streams: [

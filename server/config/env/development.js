@@ -6,13 +6,13 @@ module.exports = {
     uri: 'mongodb://admin:admin@ds051947.mongolab.com:51947/thingy-device-db'
   },
   solr: {
-    host: 'titlesSolrDev',
+    host: '',
     port: 80,
     path: '/'
   },
   redis: {
-    server: 'utilp1ea7.turner.com',
-    secretKey: 'SeekQret-ScarModDev',
+    server: '',
+    secretKey: '',
     prefix: 'sess-dev',
     port: 6383,
     db: 0

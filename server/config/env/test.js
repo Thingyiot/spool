@@ -3,22 +3,22 @@
 module.exports = {
   env: 'test',
   mongo: {
-    uri: 'mongodb://appContracts:!2014*TuRner!@ds033629.mongolab.com:33629/contracts-test'
+    uri: ''
   },
   solr: {
-    host: 'titlesSolrQA',
+    host: '',
     port: 80,
     path: '/'
   },
   redis: {
-  	server: 'utilp1ea7.turner.com',
-  	secretKey: 'SeekQret-ScarModTest',
+  	server: '',
+  	secretKey: '',
   	prefix: 'sess-test',
   	port: 6383,
   	db: 2
   },
   logging: {
-    name: 'contracts-test',
+    name: 'spool-test',
     streams: [
       {
          type: 'raw',
@@ -29,7 +29,7 @@ module.exports = {
          type: "raw",
          level: "info",
          stream: require('bunyan-logstash').createStream({
-           host: "utilp1ea10",
+           host: "",
            port: 5545
          })
       }
