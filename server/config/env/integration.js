@@ -3,22 +3,17 @@
 module.exports = {
   env: 'integration',
   mongo: {
-    uri: 'mongodb://utilp1ea6.turner.com:27017/contracts-integration'
-  },
-  solr: {
-    host: 'titlesSolrDev',
-    port: 80,
-    path: '/'
+    uri: ''
   },
   redis: {
-  	server: 'utilp1ea7.turner.com',
-  	secretKey: 'SeekQret-ScarModDev',
-  	prefix: 'sess-integration',
+  	server: '',
+  	secretKey: '',
+  	prefix: '',
   	port: 6383,
   	db: 2
   },
   logging: {
-    name: 'contracts-integration',
+    name: '',
     streams: [
       {
          type: 'raw',
@@ -29,7 +24,7 @@ module.exports = {
          type: "raw",
          level: "info",
          stream: require('bunyan-logstash').createStream({
-           host: "utilp1ea10",
+           host: "",
            port: 5545
          })
       }

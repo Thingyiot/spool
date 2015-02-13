@@ -3,11 +3,11 @@
 module.exports = {
   env: 'preview',
   mongo: {
-  	uri: 'mongodb://appContracts:!2014*TuRner!@ds033489.mongolab.com:33489/contracts-preview'
+  	uri: ''
   },
   redis: {
-  	server: 'utilp1ea7.turner.com',
-  	secretKey: 'SeekQret-ScarModPreview',
+  	server: '',
+  	secretKey: '',
   	prefix: 'sess-preview',
   	port: 6383,
   	db: 1
@@ -24,7 +24,7 @@ module.exports = {
          type: "raw",
          level: "info",
          stream: require('bunyan-logstash').createStream({
-           host: "utilp1ea10",
+           host: "",
            port: 5545
          })
       }

@@ -6,10 +6,10 @@ module.exports = {
   mongo: {
     uri: process.env.MONGOLAB_URI ||
          process.env.MONGOHQ_URL ||
-         'mongodb://appContracts:!34*93TUrner!@ds027719.mongolab.com:27719/contracts'
+         ''
   },
   solr: {
-    host: 'titlesSolr',
+    host: '',
     port: 80,
     path: '/'
   }

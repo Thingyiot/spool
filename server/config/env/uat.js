@@ -3,17 +3,17 @@
 module.exports = {
   env: 'uat',
   mongo: {
-  	uri: 'mongodb://appContracts:!2014*TuRner!@ds033059.mongolab.com:33059/contracts-uat'
+  	uri: ''
   },
   redis: {
-  	server: 'utilp1ea7.turner.com',
-  	secretKey: 'SeekQret-ScarModUat',
+  	server: '',
+  	secretKey: '',
   	prefix: 'sess-uat',
   	port: 6383,
   	db: 3
   },
   logging: {
-    name: 'contracts-uat',
+    name: 'spool-uat',
     streams: [
       {
          type: 'raw',
@@ -24,7 +24,7 @@ module.exports = {
          type: "raw",
          level: "info",
          stream: require('bunyan-logstash').createStream({
-           host: "utilp1ea10",
+           host: "",
            port: 5545
          })
       }
